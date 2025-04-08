@@ -1,0 +1,14 @@
+h2 Registrera konto
+
+form action="/register" method="post"
+  div
+    label for="username" Användarnamn:
+    input type="text" name="username" id="username" required
+  div
+    label for="password" Lösenord:
+    input type="password" name="password" id="password" required
+  div
+    button type="submit" Registrera
+
+p
+  a href="/login" Redan ett konto? Logga in här

@@ -1,0 +1,18 @@
+h1 Spelöversikt
+table
+  tr
+    th ID
+    th Insats
+    th Resultat
+    th Åtgärder
+  - games.each do |game|
+    tr
+      td = game['id']
+      td = game['bet']
+      td = game['result']
+      td
+        a href="/casino/#{game['id']}" Visa
+        a href="/casino/#{game['id']}/edit" Redigera
+        form action="/casino/#{game['id']}/delete" method="post"
+          button Radera
+a href="/casino/new" Nytt spel

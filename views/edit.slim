@@ -1,0 +1,7 @@
+h1 Redigera spel
+form action="/casino/#{result['id']}/update" method="post"
+  label for="bet" Insats:
+  input type="number" name="bet" value=result['bet'] required
+  label for="result" Resultat:
+  input type="text" name="result" value=result['result'] required
+  button type="submit" Uppdatera
